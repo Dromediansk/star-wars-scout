@@ -1,0 +1,28 @@
+.people {
+	background-color: #333333;
+	color: yellow;
+}
+
+.card {
+	display: inline-block;
+	border-radius: 5px;
+	margin: 8px;
+	box-shadow: 10px;
+	border-width: 2px;
+	min-width: 250px;
+	min-height: 380px;
+	transition: all 1s;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card h2 {
+	padding: 10px;
+	border-bottom: 3px solid rgb(87, 89, 17, 1);
+}
+
+.card p {
+	line-height: 20px;
+}

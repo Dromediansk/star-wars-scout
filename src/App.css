@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'star wars';
+	src: url('star-wars-font.woff') format('woff');
+}
+
+h1 {
+	font-family: 'star wars';
+	text-transform: uppercase;
+}
