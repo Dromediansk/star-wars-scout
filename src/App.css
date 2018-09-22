@@ -1,9 +1,12 @@
 @font-face {
-	font-family: 'star wars';
-	src: url('star-wars-font.woff') format('woff');
+font-family: 'star wars';
+/*font-style: normal;
+font-weight: normal;*/
+src: local('star wars'), url('STARWARS.woff') format('woff');
 }
 
 h1 {
 	font-family: 'star wars';
 	text-transform: uppercase;
+ /* -webkit-text-stroke: 1px yellow;*/
 }
