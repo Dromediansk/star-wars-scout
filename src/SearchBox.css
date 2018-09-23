@@ -5,6 +5,7 @@
 .searchbox input {
 	width: 200px;
 	padding: 10px;
+	margin-bottom: 50px;
 	border-radius: 5px;
 	border:  1px solid #FFB700;
 	background-color: #FBF1A9;
