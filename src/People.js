@@ -5,20 +5,18 @@ export class People extends Component {
 	constructor() {
 		super();
 		this.state = {
-      	showDetails: false
+		  showDetails: false
     }
-    this.showDetails = this.showDetails.bind(this);
-    this.hideDetails = this.hideDetails.bind(this);
   }
 
-  showDetails(event) {
+  showDetails = (event) => {
   	event.preventDefault();
   	this.setState({
   		showDetails: true
   	});
   }
 
-  hideDetails() {
+  hideDetails = () => {
   	this.setState({
   		showDetails: false
   	});
@@ -36,13 +34,12 @@ export class People extends Component {
 					<i className='fa fa-chevron-circle-up fa-5px'></i>
 				</div>
 				<ul className='details'>
-		            <li> Height: {this.props.height}</li>
-		            <li> Mass: {this.props.mass}</li>
-		            <li> Hair Color: {this.props.hair_color}</li>
-		            <li> Skin Color: {this.props.skin_color}</li>
-		            <li> Eye Color: {this.props.eye_color}</li>
-		            <li> Birth Year: {this.props.birth_year}</li>
-		            <li> Gender: {this.props.gender}</li>
+					<li>Height: {this.props.height}</li>
+					<li>Hair Color: {this.props.hair_color}</li>
+					<li>Skin Color: {this.props.skin_color}</li>
+					<li>Eye Color: {this.props.eye_color}</li>
+					<li>Birth Year: {this.props.birth_year}</li>
+					<li>Gender: {this.props.gender}</li>
 	        	</ul>
 			</div>
 

@@ -9,10 +9,9 @@ const CardList = ({ heroes }) => {
 		return (
 			<People
 				key = {i}
-                id = {i}
-                name = {heroes[i].name}
+				id = {i}
+				name = {heroes[i].name}
                 height = {heroes[i].height}
-                mass = {heroes[i].mass}
                 hair_color = {heroes[i].hair_color}
                 skin_color = {heroes[i].skin_color}
                 eye_color = {heroes[i].eye_color}

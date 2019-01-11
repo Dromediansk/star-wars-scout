@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
 import './App.css';
-import Urls from './Urls.js';
+import Heroes from './Heroes.js';
 
 class App extends Component {
 	constructor() {
@@ -15,13 +15,13 @@ class App extends Component {
 
 	componentDidMount() {
 		let characArray = [];
-    	Urls.map(url => {
+    	Heroes.map(url => {
       return (
         fetch(url).then(response => response.json())
           .then(result => characArray.push(result))
-          .then(persons => {this.setState({ heroes: characArray })})
+          .then(data => {this.setState({ heroes: characArray })})
       );
-    });
+		});
   }
 
 	onSearchChange = (event) => {
