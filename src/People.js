@@ -5,11 +5,13 @@ export class People extends Component {
 	constructor() {
 		super();
 		this.state = {
-		  showDetails: false
+      	showDetails: false
     }
+    this.showDetails = this.showDetails.bind(this);
+    this.hideDetails = this.hideDetails.bind(this);
   }
 
-  showDetails = (event) => {
+  showDetails(event) {
   	event.preventDefault();
   	this.setState({
   		showDetails: true
